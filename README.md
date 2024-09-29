@@ -46,25 +46,6 @@ The MVP will focus on the core functionality of redacting first-level PII using 
 - Command-line interface for specifying input folder, output folder, model selection, API tokens, and PII redaction flags.
 - Output is a redacted document with masked PII (using symbols such as asterisks or similar).
 
-# PII Scrubber
-
-## Mission Statement
-
-Our mission is to protect user privacy by developing a robust, automated PII scrubber capable of processing text documents and audio transcripts. Utilizing advanced natural language processing and customizable K-anonymity settings, our tool ensures compliance with privacy regulations (such as HIPAA) by progressively removing identifiable information to safeguard individuals in diverse contexts.
-
-## Product Overview
-
-The PII Scrubber is a command-line tool designed to remove Personally Identifiable Information (PII) from text documents or transcripts. It operates by sending the text through multiple redaction passes, using OpenAI's language models to progressively anonymize sensitive information. Users can customize the redaction level via a K-anonymity slider, which defines how much information is stripped away with each pass.
-
-### Key Features
-
-1. **Text document redaction**: Upload `.txt` files to be scrubbed for PII.
-2. **First-Level PII Redaction**: The tool redacts names, SSNs, phone numbers, emails, and other sensitive identifiers.
-3. **Multiple Redaction Passes**: Users can select how many passes the scrubber should make via the K-anonymity setting.
-4. **OpenAI API Integration**: Redaction logic is powered by OpenAI's large language models.
-5. **Local Model Support**: Optional functionality to use local models (mocked for now).
-6. **Docker Support**: Easily run the scrubber using Docker.
-
 ## Usage
 
 ### Command-Line Tool
